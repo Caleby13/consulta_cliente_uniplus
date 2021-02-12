@@ -1,8 +1,3 @@
-import express from 'express';
-import routes from './routes';
+import app from './app';
 
-const app = express();
-
-app.use(routes);
-
-app.listen(3333, () => console.log('🍔 Server started'));
+app.listen(3333);

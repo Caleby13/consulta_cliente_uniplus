@@ -16,8 +16,13 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "class-methods-use-this": "off",
     "prettier/prettier": "error",
-    "import/extensions": ["error", "ignorePackages", { "ts": "never" }]
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      { "ts": "never", "js": "never" }
+    ]
   },
   "settings": {
     "import/resolver": {
